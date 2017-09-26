@@ -1,5 +1,5 @@
 BootStrap:docker
-From:tensorflow/tensorflow:1.0.1-gpu
+From:tensorflow/tensorflow:lastest-gpu
 
 %runscript
   exec python "$@" 
