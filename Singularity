@@ -1,5 +1,5 @@
 BootStrap:docker
-From:tensorflow/tensorflow:latest-gpu
+From:tensorflow/tensorflow:1.0.1-gpu
 
 %runscript
   exec python "$@" 
@@ -12,4 +12,4 @@ From:tensorflow/tensorflow:latest-gpu
     protobuf pymongo scikit-learn seaborn keras-vis
 
 %test
-  python -c "import tensorflow; import keras; import vis"
+  python -c "import tensorflow; import keras"
